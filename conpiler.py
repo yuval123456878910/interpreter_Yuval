@@ -1,0 +1,143 @@
+text = ["Do 5+5+5,a",
+        "Do 5+6,b",
+        "Do 5",
+        "Do 5/5+5*2",
+        "Do %a",
+        "Do %b"]
+
+# Do to print staf
+#: Do ***,a save the fuc to a and print it
+#: Do %a it print what in a
+
+
+# to do print the z whith out z equals: Sucsess
+
+
+num = 0
+poc = list()
+on = 0
+bo = ""
+bonc = True
+bon = 0
+loly = {}
+hen = str()
+boo = 0
+
+for i in text:
+    for i in text[boo]:
+        if i in "+-*/ (),%":
+            poc.append(hen)
+            hen = str()
+            poc.append(str(i))
+        else:
+            hen += i
+    if hen != "":
+        poc.append(hen)
+
+    on = 0
+    for i in poc:
+        try:
+            num = float(poc[on])
+            
+        except:
+            on += 1
+            continue
+    on = 0
+
+
+    def Do(poc):
+        print(poc)
+
+
+
+
+
+    for i in poc:
+        try:
+            if i == "Do":
+                for i in poc:    
+                    try:
+                        if i != ' ' and i != '' and i != "(" and i != ")" and i != "%" and i not in "abcdefghijklmnopqrstuvwxyz":
+                            
+                            if poc[on] == "+":
+                                num = num + float(poc[on+1])
+                                
+                                on += 1
+                            if poc[on] == "*":
+                                num = num * float(poc[on+1])
+                                
+                                on += 1
+                            if poc[on] == "/":
+                                num = num / float(poc[on+1])
+                                
+                                on += 1
+                            if poc[on] == "-":
+                                num = num - float(poc[on+1])
+                                
+                                on += 1
+                            else:
+                                on += 1 
+                                continue 
+                        else:
+                            if i != ' ' and i != '' and i != "(" and i != ")":
+                                try:
+                                    
+                                    bon = 0
+                                    for w in poc:   
+                                        
+                                        if poc[bon] == "%" and poc[bon+1] in "abcdefghijklmnopqrstuvwxyz":
+                                                
+                                            
+                                                
+                                                num = (loly.get(poc[bon+1]))
+                                                
+                                                break
+                                                    
+                                        else:
+                                            bon += 1
+
+                                    
+                                except:
+                                    pass
+                    except:
+                        continue
+                print(num)   
+            else:
+                on += 1    
+                
+
+        except:
+            continue
+
+    try:
+        bon = 0
+        for i in poc:   
+            if poc[bon] == "," and poc[bon+1] in "abcdefghijklmnopqrstuvwxyz":
+                loly[poc[bon+1]] = num
+            else:
+                bon += 1
+        
+    except:
+        pass
+    
+    
+    for i in poc:
+        
+        if i == "Do":
+            bonc = False
+            break
+        else:
+            bonc = True
+
+    if bonc == True: 
+        print("NO func Found")
+    
+    num = 0
+    hen = ""
+    poc = list()
+    boo += 1 
+    bonc = True
+    bon = 0
+    
+
+    
