@@ -4,8 +4,7 @@
 
 # how to use?
 
-you download the file in side the file the text [........]
-chege the text to what you like.
+craete file name how you want
 
 # Do
 print the culculation
@@ -32,4 +31,5 @@ print:
         
 # how to run?
 
-python filename.py
+python conpiler.py
+and type the shortcut file
