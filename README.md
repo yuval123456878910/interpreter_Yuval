@@ -1,6 +1,6 @@
 # intepeter:
 
-# NO BLACK LINES!!
+# NO BLANKS LINES!!
 
 # how to use?
 
