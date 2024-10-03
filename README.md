@@ -33,3 +33,5 @@ print:
 
 python conpiler.py
 and type the shortcut file
+
+or download conpiler folder then open conpiler.exe put the file shorcat the put how mach time you what the text be the press endter.
