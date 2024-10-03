@@ -161,7 +161,7 @@ for i in text:
         
     except:
         pass
-    print(loly)
+    
     
     for i in poc:
         
