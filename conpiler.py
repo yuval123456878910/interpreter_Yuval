@@ -1,9 +1,14 @@
-text = ["Do 5+5+5,a",
-        "Do 5+6,b",
-        "Do 5",
-        "Do 5/5+5*2",
-        "Do %a",
-        "Do %b"]
+wher = input("Wher file: ")
+try:
+    file1 = open(f"{wher}","r")
+
+    text = list(file1.readlines())
+except:
+    print("No file found")
+
+
+
+
 
 # Do to print staf
 #: Do ***,a save the fuc to a and print it
@@ -11,6 +16,7 @@ text = ["Do 5+5+5,a",
 
 
 # to do print the z whith out z equals: Sucsess
+
 
 
 num = 0
@@ -23,9 +29,11 @@ loly = {}
 hen = str()
 boo = 0
 
+
+
 for i in text:
     for i in text[boo]:
-        if i in "+-*/ (),%":
+        if i in "+-*/ (),%\n":
             poc.append(hen)
             hen = str()
             poc.append(str(i))
@@ -33,7 +41,7 @@ for i in text:
             hen += i
     if hen != "":
         poc.append(hen)
-
+    
     on = 0
     for i in poc:
         try:
@@ -57,6 +65,7 @@ for i in text:
             if i == "Do":
                 for i in poc:    
                     try:
+                        
                         if i != ' ' and i != '' and i != "(" and i != ")" and i != "%" and i not in "abcdefghijklmnopqrstuvwxyz":
                             
                             if poc[on] == "+":
@@ -75,9 +84,11 @@ for i in text:
                                 num = num - float(poc[on+1])
                                 
                                 on += 1
+                            
                             else:
                                 on += 1 
                                 continue 
+                        
                         else:
                             if i != ' ' and i != '' and i != "(" and i != ")":
                                 try:
@@ -109,6 +120,8 @@ for i in text:
         except:
             continue
 
+    
+    
     try:
         bon = 0
         for i in poc:   
@@ -119,7 +132,7 @@ for i in text:
         
     except:
         pass
-    
+    #print(loly)
     
     for i in poc:
         
