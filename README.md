@@ -30,4 +30,4 @@ save the text to one letter diget
 python conpiler.py
 and type the shortcut file
 
-or download conpiler folder then open conpiler.exe put the file shorcat the put how mach time you what the text be the press endter.
+or download conpiler.exe file then open conpiler.exe put the file shorcat after this put how mach time you what the text be the press endter.
