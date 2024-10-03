@@ -6,6 +6,8 @@
 
 craete file name how you want
 
+# if its print it can only print on word
+
 # Do
 print the culculation
 
