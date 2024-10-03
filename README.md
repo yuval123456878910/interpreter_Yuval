@@ -14,7 +14,7 @@ print the culculation
 save the culculation to a or evry one letter and print
 
 # Do %a
-print the thamthing in a
+print the thamthing in a, or any one letter
 
 # like this
 
