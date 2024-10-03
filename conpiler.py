@@ -1,4 +1,7 @@
-wher = input("Wher file: ")
+from time import sleep
+
+wher = input("Where file: ")
+howSleep = int(input("how mach the output be? "))
 try:
     file1 = open(f"{wher}","r")
 
@@ -53,8 +56,7 @@ for i in text:
     on = 0
 
 
-    def Do(poc):
-        print(poc)
+    
 
 
 
@@ -65,7 +67,7 @@ for i in text:
             if i == "Do":
                 for i in poc:    
                     try:
-                        
+                        cock = True
                         if i != ' ' and i != '' and i != "(" and i != ")" and i != "%" and i not in "abcdefghijklmnopqrstuvwxyz":
                             
                             if poc[on] == "+":
@@ -85,9 +87,12 @@ for i in text:
                                 
                                 on += 1
                             
+                                
+
                             else:
                                 on += 1 
                                 continue 
+                        
                         
                         else:
                             if i != ' ' and i != '' and i != "(" and i != ")":
@@ -113,6 +118,29 @@ for i in text:
                     except:
                         continue
                 print(num)   
+            
+            elif i == "In":
+                bon = 0
+                
+                for i in poc:
+                    cock = False
+                    if poc[bon] == "," and poc[bon+1] in "abcdefghijklmnopqrstuvwxyz":
+                        do = input(" ")
+                        loly[poc[bon+1]] = do
+                        break
+                    else:
+                        bon += 1
+            elif i == "Ln":
+                bon = 0
+                
+                for i in poc:
+                    cock = False
+                    if poc[bon] == "," and poc[bon+1] in "abcdefghijklmnopqrstuvwxyz":
+                        do = poc[bon-1]
+                        loly[poc[bon+1]] = do
+                        break
+                    else:
+                        bon += 1
             else:
                 on += 1    
                 
@@ -123,12 +151,13 @@ for i in text:
     
     
     try:
-        bon = 0
-        for i in poc:   
-            if poc[bon] == "," and poc[bon+1] in "abcdefghijklmnopqrstuvwxyz":
-                loly[poc[bon+1]] = num
-            else:
-                bon += 1
+        if cock:
+            bon = 0
+            for i in poc:   
+                if poc[bon] == "," and poc[bon+1] in "abcdefghijklmnopqrstuvwxyz":
+                    loly[poc[bon+1]] = num
+                else:
+                    bon += 1
         
     except:
         pass
@@ -136,7 +165,7 @@ for i in text:
     
     for i in poc:
         
-        if i == "Do":
+        if i == "Do" or i == "In" or i == "Ln":
             bonc = False
             break
         else:
@@ -154,3 +183,4 @@ for i in text:
     
 
     
+sleep(howSleep)
