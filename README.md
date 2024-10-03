@@ -30,3 +30,6 @@ print:
 11.0
 
         
+# how to run?
+
+python filename.py
