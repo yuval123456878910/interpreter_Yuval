@@ -28,6 +28,13 @@ print:
 15.0
 11.0
 
+# In ,a
+ask you to type and save to one letter diget.
+
+# Ln ..,u
+
+save the text to one letter diget
+
         
 # how to run?
 
