@@ -11,7 +11,13 @@ except:
 
 
 
+# update 
+# sum 3,a
+# it's add 3 to a
 
+# update 
+# min 1,a
+# it's take 1 from a
 
 # Do to print staf
 #: Do ***,a save the fuc to a and print it
@@ -141,10 +147,54 @@ for i in text:
                         break
                     else:
                         bon += 1
+            elif i == "sum":
+                
+                bon = 0
+                sum = 0
+                for i in poc:
+                    try:
+                        sum = float(i)
+                        break
+                    except:
+                        continue
+                
+                for i in poc:
+                    
+                    cock = False
+                    if poc[bon] == "," and poc[bon+1] in "abcdefghijklmnopqrstuvwxyz":
+                        
+                        loly[poc[bon+1]] = loly.get(poc[bon+1]) + sum
+                        
+                        
+                        break
+                    else:
+                        bon += 1
+
+            elif i == "min":
+                
+                bon = 0
+                sum = 0
+                for i in poc:
+                    try:
+                        sum = float(i)
+                        break
+                    except:
+                        continue
+                
+                for i in poc:
+                    
+                    cock = False
+                    if poc[bon] == "," and poc[bon+1] in "abcdefghijklmnopqrstuvwxyz":
+                        
+                        loly[poc[bon+1]] = loly.get(poc[bon+1]) - sum
+                        
+                        
+                        break
+                    else:
+                        bon += 1
             else:
                 on += 1    
                 
-
         except:
             continue
 
@@ -165,7 +215,7 @@ for i in text:
     
     for i in poc:
         
-        if i == "Do" or i == "In" or i == "Ln":
+        if i == "Do" or i == "In" or i == "Ln" or i == "sum" or i != "min":
             bonc = False
             break
         else:
