@@ -24,6 +24,14 @@ ask you to type and save to one letter diget.
 
 save the text to one letter diget
 
+# sum 3,a
+
+add 3 or number to the vaule a or any other
+
+# min 3,a
+
+take 3 or number from the vaule a or any other
+
         
 # how to run?
 
