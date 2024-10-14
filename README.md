@@ -44,4 +44,4 @@ or download conpiler.exe file then open conpiler.exe put the file shorcat after 
 # best run
 
 download the folder name setup-flip-flop run setUpFolderToRun.bat choose the folder of all file.
-when its finish go back to the folder of all the files that you whant to run and run run.bat it's ask you for file type the run file you what. 
+when it's finish go back to the folder of all the files that you whant to run and run run.bat it's ask you for file type the run file you what. 
