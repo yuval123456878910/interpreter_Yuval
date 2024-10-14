@@ -4,7 +4,7 @@
 
 # how to use?
 
-craete file name how you want
+craete file name <name>.fip
 
 # if its print it can only print on word
 
@@ -39,3 +39,9 @@ python conpiler.py
 and type the shortcut file
 
 or download conpiler.exe file then open conpiler.exe put the file shorcat after this put how mach time you what the text be the press endter.
+
+
+# best run
+
+download the folder name setup-flip-flop run setUpFolderToRun.bat choose the folder of all file.
+when its finish go back to the folder of all the files that you whant to run and run run.bat it's ask you for file type the run file you what. 
