@@ -4,7 +4,7 @@
 
 # how to use?
 
-craete file name <name>.fip
+craete file name filename.fip
 
 # if its print it can only print on word
 
