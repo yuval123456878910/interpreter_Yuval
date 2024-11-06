@@ -35,6 +35,8 @@ take 3 or number from the vaule a or any other
         
 # how to run?
 
+#Python file is outdated!!!
+
 python conpiler.py
 and type the shortcut file
 
