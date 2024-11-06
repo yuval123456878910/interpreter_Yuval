@@ -1,3 +1,8 @@
+# /////////////////////////////////
+# this thing have bugs and outdated
+# /////////////////////////////////
+
+
 from time import sleep
 
 wher = input("Where file: ")
